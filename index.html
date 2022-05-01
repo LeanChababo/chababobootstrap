@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="./favicons/agumonfavicon2.png" type="image/x-icon">
+    <title>DigimonWorld1</title>
+</head>
+
+<body>
+    <audio id="demo" autoplay src="./audio/FileCity.mp3"></audio>
+
+    <!-- ME GUSTARIA AÑADIR ESTAS CANCIONES PARA QUE SUENEN UNA DPS DE OTRA PERO NO ENCUENTRO COMO :(((-->
+
+    <!-- <audio id="demo" autoplay src="./audio/Curling.mp3"></audio>
+    <audio id="demo" autoplay src="./audio/TropicalJungle.mp3"></audio>
+    <audio id="demo" autoplay src="./audio/ItemShop.mp3"></audio> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img class="w-75" src="./img/ps2v3.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/digievolutionguide.html">Digievolution Chart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Guide</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container pt-2">
+        <section id="portada" class="row justify-content-evenly">
+            <div class="col-12 col-lg-6 justify-content-center align-center">
+                <h1 class="display-1 fw-bold text-center">Una obra de arte en 32 Bits</h1>
+                <br>
+                <p class="fst-italic text-center">Digimon World es un videojuego de la franquicia basado originalmente
+                    en los V-Pets, el cuál da inicio a la serie de videojuegos Digimon World, siendo el primer juego de
+                    Digimon lanzado para la consola PlayStation y luego siendo porteado solamente en Corea del Sur para
+                    el sistema operativo windows. Al haber salido al mercado antes que la serie de TV (Digimon
+                    Adventure), esta basado estrictamente en los V-Pets. El juego consiste en criar a un Digimon desde
+                    su etapa bebe, hasta hacerlo evolucionar a su forma mas poderosa. El Digimon eventualmente morirá
+                    con la edad, revirtiéndose a un Digitama y renaciendo de nuevo. Para criar un Digimon, el jugador
+                    deberá entrenarlo, consentirlo o regañarlo según la ocasión, darle de comer, llevarlo al baño, o
+                    llevarlo a descansar cuando haya entrenado mucho.</p>
+            </div>
+
+            <div class="col-12 border rounded ms-1 p-0 col-lg-5">
+                <img class="w-100 h-100" src="./img/portada.png" alt="">
+            </div>
+        </section>
+
+        <section class="m-2 pt-5 row justify-content-evenly">
+            <div class="col-12 col-lg-2">
+                <div class="card shadow p-0 mb-5 bg-body rounded" style="width: 18rem;">
+                    <img w-100 src="./img/agumon.png" class="card-img-top" alt="agumon">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Agumon</h5>
+                        <p class="card-text">El Digimon principal del anime, también uno de los iniciales que te pueden tocar en esta historia.</p>
+                        <a href="https://digimon.fandom.com/es/wiki/Agumon" class="btn btn-primary">Agumon Wiki</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-2">
+                <div class="card shadow p-0 mb-5 bg-body rounded" style="width: 18rem;">
+                    <img w-100 src="./img/gabumon.png" class="card-img-top" alt="gabumon">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Gabumon</h5>
+                        <p class="card-text">Digimon secundario del anime. Uno de los digimones iniciales que te pueden tocar en esta historia.</p>
+                        <a href="https://digimon.fandom.com/es/wiki/Gabumon" class="btn btn-primary">Gabumon Wiki</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Historia" class="row">
+            <div class="col-12">
+                <h2 class="text-center fw-bold display-4">Historia principal</h2>
+                <p></p>
+
+            </div>
+
+
+        </section>
+    </main>
+
+    <script>
+        var sound = document.getElementById("demo");
+        sound.volume = 0.03;
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
