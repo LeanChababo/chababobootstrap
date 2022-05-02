@@ -14,17 +14,6 @@
 </head>
 
 <body>
-    <audio id="demo" autoplay>
-        <source src="./audio/FileCity.mp3" type="audio/mpeg">
-        <source src="./audio/FileCity-2.ogg" type="audio/ogg">
-    </audio>
-
-    <!-- ME GUSTARIA AÑADIR ESTAS CANCIONES PARA QUE SUENEN UNA DPS DE OTRA PERO NO ENCUENTRO COMO :(((-->
-
-    <!-- <audio id="demo" autoplay src="./audio/Curling.mp3"></audio>
-    <audio id="demo" autoplay src="./audio/TropicalJungle.mp3"></audio>
-    <audio id="demo" autoplay src="./audio/ItemShop.mp3"></audio> -->
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
         <div class="container">
             <a class="navbar-brand" href="index.html"><img class="w-75" src="./img/Playstation_logo_colour (1).png" alt=""></a>
@@ -49,11 +38,11 @@
     </nav>
 
     <main class="container pt-2">
-        <section id="portada" class="row justify-content-evenly">
-            <div class="col-12 col-lg-6 justify-content-center align-center">
-                <h1 class="display-1 fw-bold text-center text-warning" style="text-shadow: 3px 4px black;;">Una obra de arte en 32 Bits</h1>
+        <section id="portada" class="row justify-content-evenly pt-2">
+            <div class="col-12 col-sm-6 justify-content-center align-center">
+                <h1 class="display-1 fw-bold text-center text-warning" style="text-shadow: 3px 4px black;">Una obra de arte en 32 Bits</h1>
                 <br>
-                <p class="fst-italic text-center">Digimon World es un videojuego de la franquicia basado originalmente
+                <p class="fst-italic text-center"> Digimon World es un videojuego de la franquicia basado originalmente
                     en los V-Pets, el cuál da inicio a la serie de videojuegos Digimon World, siendo el primer juego de
                     Digimon lanzado para la consola PlayStation y luego siendo porteado solamente en Corea del Sur para
                     el sistema operativo windows. Al haber salido al mercado antes que la serie de TV (Digimon
@@ -64,13 +53,13 @@
                     llevarlo a descansar cuando haya entrenado mucho.</p>
             </div>
 
-            <div class="col-12 ms-1 d-flex align-items-center col-lg-5">
-                <img class="w-100" src="./img/digimonlogo.png" alt="">
+            <div class="col-12 ms-1 d-flex align-items-center col-sm-5">
+                <img  id="bounceimg" class="w-100" src="./img/digimonlogo.png" alt="">
             </div>
         </section>
 
         <section class="m-2 pt-5 row justify-content-evenly">
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-sm-4">
                 <div id="cartita" class="card shadow p-0 mb-5 bg-body rounded" style="width: 100%;">
                     <img w-100 src="./img/agumon.png" class="card-img-top" alt="agumon">
                     <div class="card-body text-center">
@@ -81,7 +70,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-sm-4">
                 <div id="cartita1" class="card shadow p-0 mb-5 bg-body rounded" style="width: 100%;">
                     <img w-100 src="./img/gabumon.png" class="card-img-top" alt="gabumon">
                     <div class="card-body text-center">
@@ -111,12 +100,12 @@
                 <br>
             </div>
         </section>
-        <article class="row align-items-center">
-            <section class="col-12 col-lg-5">
-                <section>
-                    <h3 id="img-ingamegit" class="text-center fw-bold fs-2" style="text-shadow: 3px 2px grey;">Imagenes in-game</h3>
-                    <br>
-                </section>
+        <article class="row">
+            <section class="col-12 col-sm-5">
+                <br>
+                <h3 id="img-ingamegit" class="text-center fw-bold fs-1" style="text-shadow: 3px 2px grey;">Imagenes in-game</h3>
+                <br>
+                
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
@@ -163,11 +152,26 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
+                <br>
+                <div class="p-4">
+                    <h4 class="text-info fs-3 text-center fw-bold" style="text-shadow: 2px 2px black;">Aqui puedes reproducir la musica de este juego!</h4>
+                </div>
+                <br>
+                <div class="w-100">
+                    <audio id="demo" autoplay controls class="w-100">
+                        <source src="./audio/FileCity.mp3" type="audio/mpeg">
+                        <source src="./audio/FileCity-2.ogg" type="audio/ogg">
+                    </audio>
+                </div>
             </section>
+            <!-- ME GUSTARIA AÑADIR ESTAS CANCIONES PARA QUE SUENEN UNA DPS DE OTRA, PERO NO ENCUENTRO COMO :(((-->
+            <!-- <audio id="demo" autoplay src="./audio/Curling.mp3"></audio>
+            <audio id="demo" autoplay src="./audio/TropicalJungle.mp3"></audio>
+            <audio id="demo" autoplay src="./audio/ItemShop.mp3"></audio> -->
             <br>
             <br>
 
-            <aside class="col-12 col-lg-7">
+            <aside class="col-12 col-sm-7">
                 <br>
                 <h3 class="text-center" style="text-shadow: 4px 3px black;"><span class="text-primary fw-bold display-5">Jugabilidad</span></h3><br>
                 <p class="text-center fst-italic">La jugabilidad de Digimon World está compuesta de dos elementos en su
@@ -219,11 +223,9 @@
                     para recrutar nuevos digimon y algunas sorpresas escondidas.</p>
             </aside>
         </article>
-        <br>
-        <br>
-        <br>
+            
     </main>
-    
+
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
             
             <symbol id="facebook" viewBox="0 0 16 16">
