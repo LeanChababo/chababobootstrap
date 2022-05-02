@@ -117,3 +117,15 @@
         transform: translateY(-4px);
     }
 }
+
+@media all and (max-width: 450px) {
+    
+    .carrusel-audio {
+    
+        order: 2;
+    }
+    .aside-jugabilidad {
+    
+        order: 1;
+    }
+}
