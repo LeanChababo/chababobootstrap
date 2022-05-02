@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+.subtitle{
+    font-size:1.1rem;
+}
+
 #cartita {
     transition: all 400ms ease;
 }
@@ -50,6 +54,42 @@
     animation: bounce 1s linear;
 }
 
+.guiadeljuego{
+    margin: 4vh 7vh 4vh 7vh;
+}
+
+.historiaprincipal{
+    padding: 0.5vh;
+    padding-bottom: 1.5vh;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .2), 15px 15px 15px rgba(255, 255, 255, .1);
+}
+
+.box{
+    padding: 0.5vh;
+    padding-bottom: 1.5vh;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .2), 15px 15px 15px rgba(255, 255, 255, .1);
+}
+
+.img-ingame{
+    padding: 0.5vh;
+    padding-bottom: 1.5vh;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, .2), 15px 15px 15px rgba(255, 255, 255, .1);
+}
+
+.musica-text{
+    padding: 0.5vh;
+    padding-bottom: 1.5vh;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px 3px rgba(0, 0, 0, .2), 5px 5px 5px rgba(255, 255, 255, 0.1);
+    
+}
 
 
 @keyframes bounce{
