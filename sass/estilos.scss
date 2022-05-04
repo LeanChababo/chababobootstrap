@@ -1,3 +1,8 @@
+$colorbgshadow: #fff;
+$transitionconfig: all 400ms ease;
+$box-shadow-hover: 5px 5px 20px rgba(0, 0, 0, 0.4); 
+$box-shadow-titulos: 5px 5px 5px 5px rgba(0, 0, 0, .2), 15px 15px 15px rgba(255, 255, 255, .1);
+
 * {
     padding: 0;
     margin: 0;
@@ -8,22 +13,22 @@
 }
 
 #cartita {
-    transition: all 400ms ease;
+    transition: $transitionconfig;
+    &:hover {
+        box-shadow: $box-shadow-hover;
+        transform: translateY(-3%);
+        }
 }
 
-#cartita:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-}
 
 #cartita1 {
-    transition: all 400ms ease;
+    transition: $transitionconfig;
+    &:hover {
+        box-shadow: $box-shadow-hover;
+        transform: translateY(-3%);
+        }
 }
 
-#cartita1:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-}
 
 .carousel-caption {
     bottom: 280px;
@@ -46,10 +51,6 @@
     fill: currentColor;
 }
 
-#img-ingame{
-    color: blueviolet;
-}
-
 #bounceimg:hover{
     animation: bounce 1s linear;
 }
@@ -61,23 +62,23 @@
 .historiaprincipal{
     padding: 0.5vh;
     padding-bottom: 1.5vh;
-    background: #fff;
+    background:  $colorbgshadow;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .2), 15px 15px 15px rgba(255, 255, 255, .1);
+    box-shadow: $box-shadow-titulos;
 }
 
 .box{
     padding: 0.5vh;
     padding-bottom: 1.5vh;
-    background: #fff;
+    background: $colorbgshadow;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .2), 15px 15px 15px rgba(255, 255, 255, .1);
+    box-shadow: $box-shadow-titulos;
 }
 
 .img-ingame{
     padding: 0.5vh;
     padding-bottom: 1.5vh;
-    background: #fff;
+    background: $colorbgshadow;
     border-radius: 10px;
     box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, .2), 15px 15px 15px rgba(255, 255, 255, .1);
 }
@@ -85,7 +86,7 @@
 .musica-text{
     padding: 0.5vh;
     padding-bottom: 1.5vh;
-    background: #fff;
+    background: $colorbgshadow;
     border-radius: 10px;
     box-shadow: 3px 4px 5px 3px rgba(0, 0, 0, .2), 5px 5px 5px rgba(255, 255, 255, 0.1);
 }
@@ -93,7 +94,7 @@
 .text-guide{
     padding: 0.5vh;
     padding-bottom: 1.5vh;
-    background: #fff;
+    background: $colorbgshadow;
     border-radius: 10px;
     box-shadow: 3px 4px 3px 3px rgba(0, 0, 0, .2), 15px 15px 15px rgba(255, 255, 255, .1);
 }
