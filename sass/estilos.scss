@@ -3,14 +3,37 @@ $transitionconfig: all 400ms ease;
 $box-shadow-hover: 5px 5px 20px rgba(0, 0, 0, 0.4); 
 $box-shadow-titulos: 5px 5px 5px 5px rgba(0, 0, 0, .2), 15px 15px 15px rgba(255, 255, 255, .1);
 
+$color: (
+    primary: rgb(255, 217, 0),
+    secondary: red,
+    tertiary: blue,
+    quaternary: black,
+);
+
+.titulohome {
+    color: map-get($color, 'primary');
+}
+.subtitulo {
+    color: map-get($color, 'secondary');
+}
+.titulo-musica {
+    color: map-get($color, 'primary'); 
+}
+
+.box {
+    color: map-get($color, 'tertiary');
+}
+
+.img-ingame {
+    color: map-get($color, 'quaternary');
+}
+
+
 * {
     padding: 0;
     margin: 0;
 }
 
-.subtitle{
-    font-size:1.1rem;
-}
 
 #cartita {
     transition: $transitionconfig;
@@ -22,11 +45,7 @@ $box-shadow-titulos: 5px 5px 5px 5px rgba(0, 0, 0, .2), 15px 15px 15px rgba(255,
 
 
 #cartita1 {
-    transition: $transitionconfig;
-    &:hover {
-        box-shadow: $box-shadow-hover;
-        transform: translateY(-3%);
-        }
+    @extend #cartita;
 }
 
 
@@ -68,40 +87,66 @@ $box-shadow-titulos: 5px 5px 5px 5px rgba(0, 0, 0, .2), 15px 15px 15px rgba(255,
 }
 
 .box{
-    padding: 0.5vh;
-    padding-bottom: 1.5vh;
-    background: $colorbgshadow;
-    border-radius: 10px;
-    box-shadow: $box-shadow-titulos;
+    @extend .historiaprincipal;
+    
 }
 
 .img-ingame{
-    padding: 0.5vh;
-    padding-bottom: 1.5vh;
-    background: $colorbgshadow;
-    border-radius: 10px;
+    @extend .historiaprincipal;
     box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, .2), 15px 15px 15px rgba(255, 255, 255, .1);
 }
 
 .musica-text{
-    padding: 0.5vh;
-    padding-bottom: 1.5vh;
-    background: $colorbgshadow;
-    border-radius: 10px;
+    @extend .historiaprincipal;
     box-shadow: 3px 4px 5px 3px rgba(0, 0, 0, .2), 5px 5px 5px rgba(255, 255, 255, 0.1);
 }
 
 .text-guide{
-    padding: 0.5vh;
-    padding-bottom: 1.5vh;
-    background: $colorbgshadow;
-    border-radius: 10px;
+    @extend .historiaprincipal;
     box-shadow: 3px 4px 3px 3px rgba(0, 0, 0, .2), 15px 15px 15px rgba(255, 255, 255, .1);
 }
 
+@mixin configparrafos ($text-align, $font-style, $font-size) {
+    text-align: $text-align;
+    font-style: $font-style;
+    font-size: $font-size;
+}
+
 .parrafos-guia{
-    text-align: center;
-    font-style: italic;
+    @include configparrafos(center, italic, 1rem)
+}
+
+.parrafohome{
+    @include configparrafos(center, italic, 1.1rem)
+}
+
+
+//each
+
+.filecity-icon,
+.nativeforest-icon,
+.tropicaljungle-icon,
+.drilltunel-icon,
+.drilltunel2-icon,
+.geckoswamp-icon,
+.mistytrees-icon,
+.toytown-icon,
+.industrialtown-icon,
+.monteinfinito-icon,
+.bugland-icon,
+.backdimension-icon {
+    height: 450px;
+    width: 450px;
+    padding: 0;
+    margin: 0;
+}
+
+@each $lugares in filecity , nativeforest , tropicaljungle , drilltunel , drilltunel2 , geckoswamp , mistytrees , toytown , industrialtown , monteinfinito , bugland , backdimension {
+    .#{$lugares}-icon {
+        border: 0.5px solid red;
+        
+    }
+    
 }
 
 @keyframes bounce{
